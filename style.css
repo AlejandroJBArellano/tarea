@@ -14,13 +14,16 @@ body{
     align-items: center;
 }
 .box{
+    background: linear-gradient(222deg, #2c5364, #203a43, #0f2027);
     width: 250px;
     height: 250px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.288);
     border-radius: 23px;
     flex-direction: column;
     color: white;
-    position: relative;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
     overflow: hidden;
 }
 .box img{
@@ -29,11 +32,12 @@ body{
     border-radius: 50px;
 }
 .user_name{
-    margin-bottom: 5px;
-    font-size: 2rem;
+    margin: 10px;
+    font-size: 1.5rem;
 }
 .skill{
     color: rgba(255, 255, 255, 0.555);
+    margin: 7px;
 }
 /* arrow */
 .arr_container, .cancel{
@@ -97,4 +101,9 @@ body{
 }
 .sa{
     justify-content: space-around;
+}
+@media screen and (max-width:700px){
+    .box{
+        position: relative;
+    }
 }
